@@ -50,11 +50,13 @@ centroide(Conj, Resultado) :-
 % Conjuntos Fuzzy
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%Delimitação dos conjuntos
 quente([30,40,50,60]).
 morno([20,30,40]).
 fresco([10,20,30]).
 frio([-10,0,10,20]).
 
+%Funções de pertinência para cada conjunto
 fn_quente(X,P) :- quente(Conj), trapezoidal(X,Conj,P).
 fn_morno(X,P) :- morno(Conj), triangular(X,Conj,P).
 fn_fresco(X,P) :- fresco(Conj), triangular(X,Conj,P).
