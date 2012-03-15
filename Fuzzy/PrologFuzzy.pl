@@ -50,11 +50,13 @@ centroide(Conj, Resultado) :-
 % Conjuntos Fuzzy
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%Delimitação dos conjuntos
 quente([30,40,50,60]).
 morno([20,30,40]).
 fresco([10,20,30]).
 frio([-10,0,10,20]).
 
+%Funções de pertinência para cada conjunto
 fn_quente(X,P) :- quente(Conj), trapezoidal(X,Conj,P).
 fn_morno(X,P) :- morno(Conj), triangular(X,Conj,P).
 fn_fresco(X,P) :- fresco(Conj), triangular(X,Conj,P).
@@ -100,16 +102,16 @@ defuzzyficacao([Fr,Fc,M,Q],Resultado) :-
 controladorFuzzy(SensacaoTermica,ArCondicionado) :-
 
       %Fuzzyficação
-      temperatura(SensacaoTermica, P),
+      temperatura(SensacaoTermica, Pertinencias),
       
       % Inferência - Implicação e Agregação
-      regra1(P,A),
-      regra2(P,B),
-      regra3(P,C),
-      regra4(P,D),
+      regra1(Pertinencias,Frio),
+      regra2(Pertinencias,Fresco),
+      regra3(Pertinencias,Morno),
+      regra4(Pertinencias,Quente),
       
       %Defuzzyficação
-      defuzzyficacao([A,B,C,D],ArCondicionado), !.
+      defuzzyficacao([Frio,Fresco,Morno,Quente],ArCondicionado), !.
 
       
 
