@@ -51,13 +51,21 @@ compara([A|B], C, Resultado) :-
 tamanho([],Resultado) :- Resultado is 0.
 tamanho([A | B],Resultado) :- tamanho(B,R), Resultado is R + 1.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Função de Similaridade
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Compara a similaridade entre duas pessoas a partir da quantidade de amigos em comum
+% Será 0 se não houver nenhum amigo em comum ou será porcentagem de amigos em comum.
 similaridadeAmigos(A,B,Similaridade) :-
     amigos(A,AmigosA),
     %amigos(B,AmigosB),
     tamanho(AmigosA, T),
     compara(AmigosA,B,C),
     Similaridade is C / T.
-    
+
+% Compara a similaridade entre duas pessoas a partir da quantidade de gostos em comum
+% Será 0 se não houver nenhum gosto em comum ou será porcentagem de gostos em comum.
 similaridadeGostos(A,B,Similaridade) :-
     gosta(A,GostoA),
     %gosta(B,GostoB),
@@ -65,16 +73,25 @@ similaridadeGostos(A,B,Similaridade) :-
     compara(GostoA,B,C),
     Similaridade is C / T.
 
+% Compara a similaridade entre duas pessoas a partir das porcentagens de amigos e gostos em comum
+% Será 0 se não houver nada em comum ou será porcentagem de gostos e gostos em comum.
 similaridade(A,Amigos,Gostos,Similaridade) :-
     similaridadeAmigos(A,Amigos,X),
     similaridadeGostos(A,Gostos,Y),
     Similaridade is (X + Y) / 2.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sistema de recomendação
+% sugere itens comprados por outros usuários
+% desde que os usuários tenham um grau de
+% pelo menos 50% de similaridade
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 recomenda(Nome,Amigos,Gostos,X) :-
     %asserta(amigos(Nome,Amigos)),
     %asserta(gosta(Nome,Gostos)).
     amigos(A,_),
-    similaridade(A,Amigos,Gostos,Sim),
-    Sim > 0,
+    similaridade(A,Amigos,Gostos,Similaridade),
+    Similaridade > 0.5,
     comprou(A,Itens),
     X = Itens.
