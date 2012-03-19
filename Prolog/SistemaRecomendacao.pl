@@ -7,10 +7,10 @@
 
 % Grafo de relacionamentos
 amigos(joao, [jose,maria,gustavo]).
-amigos(gustavo, [welligton,maria,cleyton,clara]).
+amigos(gustavo, [wallace, welligton,maria,cleyton,clara]).
 amigos(maria, [welligton,gustavo,joao,ivana]).
 amigos(cleyton, [welligton,gustavo]).
-amigos(gustavo, [wallace).
+amigos(wallace, [gustavo]).
 
 % Lista de gostos por pessoa
 gosta(joao, [futebol,carros,esportes,azul]).
@@ -46,3 +46,35 @@ compara([A|B], C, Resultado) :-
     compara(B, C, X),
     contem(C, A, W),
     Resultado is W + X.
+    
+%Retorna o tamanho de uma lista
+tamanho([],Resultado) :- Resultado is 0.
+tamanho([A | B],Resultado) :- tamanho(B,R), Resultado is R + 1.
+
+similaridadeAmigos(A,B,Similaridade) :-
+    amigos(A,AmigosA),
+    %amigos(B,AmigosB),
+    tamanho(AmigosA, T),
+    compara(AmigosA,B,C),
+    Similaridade is C / T.
+    
+similaridadeGostos(A,B,Similaridade) :-
+    gosta(A,GostoA),
+    %gosta(B,GostoB),
+    tamanho(GostoA, T),
+    compara(GostoA,B,C),
+    Similaridade is C / T.
+
+similaridade(A,Amigos,Gostos,Similaridade) :-
+    similaridadeAmigos(A,Amigos,X),
+    similaridadeGostos(A,Gostos,Y),
+    Similaridade is (X + Y) / 2.
+
+recomenda(Nome,Amigos,Gostos,X) :-
+    %asserta(amigos(Nome,Amigos)),
+    %asserta(gosta(Nome,Gostos)).
+    amigos(A,_),
+    similaridade(A,Amigos,Gostos,Sim),
+    Sim > 0,
+    comprou(A,Itens),
+    X = Itens.
