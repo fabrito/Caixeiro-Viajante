@@ -1,0 +1,14 @@
+F:\7 periodo\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.Presentation.Console.exe
+F:\7 periodo\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.Presentation.Console.pdb
+F:\7 periodo\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.dll
+F:\7 periodo\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.pdb
+F:\7 periodo\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\7 periodo\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\obj\x86\Debug\FuzzyLogic.Presentation.Console.exe
+F:\7 periodo\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\obj\x86\Debug\FuzzyLogic.Presentation.Console.pdb
+D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\obj\x86\Debug\FuzzyLogic.Presentation.Console.exe
+D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\obj\x86\Debug\FuzzyLogic.Presentation.Console.pdb
+D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\obj\x86\Debug\FuzzyLogic.Presentation.Console.csprojResolveAssemblyReference.cache
+D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.Presentation.Console.exe
+D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.Presentation.Console.pdb
+D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.dll
+D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.pdb
