@@ -12,3 +12,12 @@ D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Cons
 D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.Presentation.Console.pdb
 D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.dll
 D:\DropBox\Dropbox\Academico\Net\2012_1\Fuzzy\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.pdb
+C:\Users\werllesson\Desktop\Logica Fuzzy .Net\SIFASA-IA-d93bcf1\Fuzzy\FuzzyNet\Fuzzy\FuzzyLogic.Presentation.Console\obj\x86\Debug\FuzzyLogic.Presentation.Console.exe
+C:\Users\werllesson\Desktop\Logica Fuzzy .Net\SIFASA-IA-d93bcf1\Fuzzy\FuzzyNet\Fuzzy\FuzzyLogic.Presentation.Console\obj\x86\Debug\FuzzyLogic.Presentation.Console.pdb
+C:\Users\werllesson\Desktop\Logica Fuzzy .Net\SIFASA-IA-d93bcf1\Fuzzy\FuzzyNet\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.Presentation.Console.exe
+C:\Users\werllesson\Desktop\Logica Fuzzy .Net\SIFASA-IA-d93bcf1\Fuzzy\FuzzyNet\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.Presentation.Console.pdb
+C:\Users\werllesson\Desktop\Logica Fuzzy .Net\SIFASA-IA-d93bcf1\Fuzzy\FuzzyNet\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.dll
+C:\Users\werllesson\Desktop\Logica Fuzzy .Net\SIFASA-IA-d93bcf1\Fuzzy\FuzzyNet\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\FuzzyLogic.pdb
+C:\Users\werllesson\Desktop\Logica Fuzzy .Net\SIFASA-IA-d93bcf1\Fuzzy\FuzzyNet\Fuzzy\FuzzyLogic.Presentation.Console\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\werllesson\Desktop\Logica Fuzzy .Net\SIFASA-IA-d93bcf1\Fuzzy\FuzzyNet\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\Restaurante.DomainModel.dll
+C:\Users\werllesson\Desktop\Logica Fuzzy .Net\SIFASA-IA-d93bcf1\Fuzzy\FuzzyNet\Fuzzy\FuzzyLogic.Presentation.Console\bin\Debug\Restaurante.DomainModel.pdb
