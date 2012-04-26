@@ -14,7 +14,7 @@ namespace HeuristicaConstrutiva
         public abstract ISolucao CriaSolucaoVazia();
         public abstract bool VerificaSolucaoCompleta();
 
-        public void GerarComponente()
+        public void GerarSolucao()
         {
             Solucao = CriaSolucaoVazia();
             

@@ -6,7 +6,7 @@ using HeuristicaConstrutiva;
 
 namespace ProblemaMochila
 {
-    class Mochila : ISolucao
+    public class Mochila : ISolucao
     {
         public int CapacidadeMaxima { get; set; }
         public int CapacidadeAtual { get; set; }
@@ -34,6 +34,9 @@ namespace ProblemaMochila
 
         public void AddComponente(IComponente Componente)
         {
+            if (Componente == null)
+                return;
+
             Item item = (Item)Componente;
             if (item.Peso + CapacidadeAtual > CapacidadeMaxima)
                 throw new Exception("Capacidade da mochila excedida");
