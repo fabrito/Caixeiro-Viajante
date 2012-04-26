@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeuristicaConstrutiva", "HeuristicaConstrutiva\HeuristicaConstrutiva.csproj", "{A3DBABC1-76EA-40C1-AA36-8788C468BFCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemaMochila", "ProblemaMochila\ProblemaMochila.csproj", "{ABB230D4-DBDB-4E19-B9AF-0CBE70BF7B1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3DBABC1-76EA-40C1-AA36-8788C468BFCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3DBABC1-76EA-40C1-AA36-8788C468BFCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3DBABC1-76EA-40C1-AA36-8788C468BFCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3DBABC1-76EA-40C1-AA36-8788C468BFCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABB230D4-DBDB-4E19-B9AF-0CBE70BF7B1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABB230D4-DBDB-4E19-B9AF-0CBE70BF7B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABB230D4-DBDB-4E19-B9AF-0CBE70BF7B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABB230D4-DBDB-4E19-B9AF-0CBE70BF7B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
