@@ -43,12 +43,17 @@
     <Compile Include="ConstroiMochila.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Mochila.cs" />
+    <Compile Include="OtimizaMochila.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HeuristicaConstrutiva\HeuristicaConstrutiva.csproj">
       <Project>{A3DBABC1-76EA-40C1-AA36-8788C468BFCA}</Project>
       <Name>HeuristicaConstrutiva</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HeuristicaMelhoria\HeuristicaMelhoria.csproj">
+      <Project>{0080804E-3A32-470A-808B-0B98F5966E1F}</Project>
+      <Name>HeuristicaMelhoria</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

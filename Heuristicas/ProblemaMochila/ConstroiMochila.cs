@@ -9,7 +9,7 @@ namespace ProblemaMochila
     public class ConstroiMochila : HeuristicaConstrutiva.HeuristicaConstrutiva
     {
         int TamanhoMochila { get; set; }
-        List<Item> ItensDisponiveis { get; set; }
+        public List<Item> ItensDisponiveis { get; set; }
 
         public Mochila Mochila
         {

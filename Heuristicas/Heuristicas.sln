@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProblemaMochila", "Problema
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Heuristicas", "Heuristicas\Heuristicas.csproj", "{DCB7B51C-F8FE-4C24-9287-2CC91579940D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeuristicaMelhoria", "HeuristicaMelhoria\HeuristicaMelhoria.csproj", "{0080804E-3A32-470A-808B-0B98F5966E1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,16 @@ Global
 		{DCB7B51C-F8FE-4C24-9287-2CC91579940D}.Release|Mixed Platforms.Build.0 = Release|x86
 		{DCB7B51C-F8FE-4C24-9287-2CC91579940D}.Release|x86.ActiveCfg = Release|x86
 		{DCB7B51C-F8FE-4C24-9287-2CC91579940D}.Release|x86.Build.0 = Release|x86
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0080804E-3A32-470A-808B-0B98F5966E1F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

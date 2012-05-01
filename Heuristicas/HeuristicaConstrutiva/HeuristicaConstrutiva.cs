@@ -28,11 +28,5 @@ namespace HeuristicaConstrutiva
             }        
         }
 
-
-
-
-
-
-
     }
 }
