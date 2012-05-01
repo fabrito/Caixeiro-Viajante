@@ -15,6 +15,7 @@ namespace ProblemaMochila
 
         public Item()
         {
+            Descricao = "";
             Peso = 1;
             Utilidade = 1;
         }
@@ -26,5 +27,25 @@ namespace ProblemaMochila
                 return Utilidade / Peso;
             }
         }
+
+        public override String ToString()
+        {
+            return Descricao;
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null) return false;
+            Item item = (Item)obj;
+            if (item == null)
+                return false;
+            return this.Descricao.Equals(item.Descricao) && this.Peso == item.Peso && this.Utilidade == item.Utilidade;
+        }
+
+        public override int GetHashCode()
+        {
+            return 31*Descricao.GetHashCode() * Peso * Utilidade;
+        }
+
     }
 }

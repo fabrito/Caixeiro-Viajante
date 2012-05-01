@@ -10,7 +10,7 @@ namespace ProblemaMochila
     {
         public int CapacidadeMaxima { get; set; }
         public int CapacidadeAtual { get; set; }
-        public int UtilidadeAtual { get; set; }
+        public int UtilidadeAtual { get; protected set; }
 
         public Mochila(int ValorCapacidade) 
         {
@@ -41,15 +41,38 @@ namespace ProblemaMochila
             if (item.Peso + CapacidadeAtual > CapacidadeMaxima)
                 throw new Exception("Capacidade da mochila excedida");
 
-            CapacidadeAtual += item.Peso;
-            UtilidadeAtual += item.Utilidade;
- 
-            Componentes.Add(item);
+            if (!Componentes.Contains(Componente))
+            {
+                CapacidadeAtual = CapacidadeAtual + item.Peso;
+                UtilidadeAtual = UtilidadeAtual + item.Utilidade;
+                Componentes.Add(item);
+            }
         }
 
         public void RemoveComponente(IComponente Componente)
         {
-            throw new NotImplementedException();
+            if (Componente == null)
+                return;
+
+            Item item = (Item)Componente;
+
+            if (Componentes.Contains(Componente))
+            {
+                CapacidadeAtual =  CapacidadeAtual - item.Peso;
+                UtilidadeAtual = UtilidadeAtual - item.Utilidade;
+
+                Componentes.Remove(item);
+            }            
+        }
+
+        public Mochila Clone()
+        {
+            Mochila temp = new Mochila(this.CapacidadeMaxima);
+
+            foreach (IComponente it in this.Componentes)
+                temp.AddComponente((Item)it);
+
+            return temp;
         }
     }
 }
