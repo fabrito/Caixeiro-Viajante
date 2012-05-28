@@ -8,67 +8,65 @@ namespace RedesNeurais
 {
     public class Perceptron
     {
-        private double[] Pesos;
-        private double TaxaAprendizado;
-        private int MaximoIteracoes;
-        private double ErroGlobal = 1;
+        private double[] w;
+        private double n;
+        private int max;
+        private double e = 1;
+
+        private IFuncaoAtivacao ativacao;     
         
-        public Perceptron (int numx, double txaprendizado, int maxit){
-            Pesos = new double[numx + 1];
-            TaxaAprendizado = txaprendizado;
-            MaximoIteracoes = maxit;            
+
+        public Perceptron (int numx, double txaprendizado, int maxit, IFuncaoAtivacao a){
+            w = new double[numx + 1];
+            n = txaprendizado;
+            ativacao = a;
+            max = maxit;            
          }
 
         public double Gerar(double[] x){
-            if (x.Length != Pesos.Length -1){
+            if (x.Length != w.Length -1){
                 throw new Exception("Número de entradas não suportada.");
             }
             double net = 0;
             for (int c = 0; c < x.Length; c++) {
-                net += x[c] * Pesos[c];
+                net += x[c] * w[c];
             }
-            net += Pesos[x.Length]*1;
-            return FuncaoAtivacao(net);
+            net += w[x.Length]*1;
+            return ativacao.Ativacao(net);
          }
 
-        public double FuncaoAtivacao(double net) {
-            if (net > 0)
-                return 1;
-            else
-                return 0;
-        }
-
-        public void Treinar(int nn, double[,] x, double[] d)
+       
+        /*public void Treinar(int nn, double[,] x, double[] d)
         {
             int cont = 0;
-            while (cont <= MaximoIteracoes){
+            while (e != 0 && cont <= max){
                 for(int c = 0; c < nn; c++){
-                    double[] tmp = new double[Pesos.Length-1];
-                    for (int tc = 0; tc < Pesos.Length-1; tc++)
-                        tmp[tc] = x[c, tc];
-                    Treinar(tmp,d[c]);
+                    double[] p = x;
+                    Treinar(x,d[c]);
                 }
             }
-        }
+        }*/
+
+             
 
         public void Treinar(double[] x, double d) {
-            ErroGlobal = 1;
+            e = 1;
             int cont = 0;
-            while (ErroGlobal != 0 && cont <= MaximoIteracoes)
+            while (e != 0 && cont <= max)
             {
                 cont++;
                 double y = Gerar(x);
-                ErroGlobal = d - y;
-                Console.WriteLine("Saida Desejada: " + d + "\tSaida da Rede:" + y+"\tErro:"+ErroGlobal);
-                if (ErroGlobal != 0)
+                e = d - y;
+                Console.WriteLine("Saida Desejada: " + d + "Saida da Rede:" + y);
+                if (e != 0)
                 {
                     
-                    Console.WriteLine("erro: " + ErroGlobal);
+                    Console.WriteLine("erro: " + e);
                     for (int c = 0; c < x.Length; c++)
                     {
-                        Pesos[c] = Pesos[c] + TaxaAprendizado * x[c] * ErroGlobal;
+                        w[c] = w[c] + n * x[c] * e;
                     }
-                    Pesos[x.Length] = Pesos[x.Length] + TaxaAprendizado * 1 * ErroGlobal;
+                    w[x.Length] = w[x.Length] + n * 1 * e;
                     
                 }
             }

@@ -9,23 +9,37 @@ namespace RedesNeurais
     {
         static void Main(string[] args)
         {
-            double[,] conjTreinamento = new double[,] {
-                { 0, 0 },
-                { 0, 1 },
-                { 1, 0 },
-                { 1, 1 } };
+            /*Perceptron p = new Perceptron(2, 0.1, 1000);
+            p.Treinar(new double[] { 0, 0 }, 0);
+            p.Treinar(new double[] { 1, 0 }, 0);
+            p.Treinar(new double[] { 0, 1 }, 0);
+            p.Treinar(new double[] { 1, 1 }, 1);*/
+            
 
-            double[] conjTreinamentoSaidas = new double[] {
-                0,
-                0,
-                0,
-                1 };
+            double[] um = new double[] { 
+                0, 0, 1, 0, 
+                0, 0, 1, 0, 
+                0, 0, 1, 0, 
+                0, 0, 1 ,0,
+                0, 1, 1, 0};
+            double[] saidasum = new double[] {
+                1,0,0,0};
 
-            Perceptron p = new Perceptron(2, 0.1, 1000);
-
-            p.Treinar(4, conjTreinamento, conjTreinamentoSaidas);
-
+            double[] dois = new double[] { 
+                1, 1, 1, 1, 
+                0, 0, 0, 1, 
+                1, 1, 1, 1,  
+                1, 0, 0 ,0,
+                1, 1, 1, 1 };
+            double[] saidasdois = new double[] {
+                0,1,0,0};
+            
+            Camada camada = new Camada(4, 20, 0.5, 1000, new FuncaoDegrau());
+            camada.Treinar(um, saidasum);
+            camada.Treinar(dois, saidasdois);
+           
             Console.ReadLine();
+            
         }
     }
 }
