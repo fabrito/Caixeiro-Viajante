@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cidade.cs" />
     <Compile Include="Acesso.cs" />
     <Compile Include="viagem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,10 +52,6 @@
     <ProjectReference Include="..\HeuristicaMelhoria\HeuristicaMelhoria.csproj">
       <Project>{0080804E-3A32-470A-808B-0B98F5966E1F}</Project>
       <Name>HeuristicaMelhoria</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Heuristicas\Heuristicas.csproj">
-      <Project>{DCB7B51C-F8FE-4C24-9287-2CC91579940D}</Project>
-      <Name>Heuristicas</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

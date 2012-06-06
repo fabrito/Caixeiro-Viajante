@@ -47,6 +47,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CaixeiroViajante\CaixeiroViajante.csproj">
+      <Project>{1FEDFF24-6161-41D7-94B3-7B0EFF85C044}</Project>
+      <Name>CaixeiroViajante</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HeuristicaConstrutiva\HeuristicaConstrutiva.csproj">
       <Project>{A3DBABC1-76EA-40C1-AA36-8788C468BFCA}</Project>
       <Name>HeuristicaConstrutiva</Name>
