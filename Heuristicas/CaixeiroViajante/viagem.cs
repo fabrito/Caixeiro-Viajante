@@ -75,6 +75,8 @@ namespace CaixeiroViajante
             while (gerandoRota == true)
             {
                 tmp = EscolheCidadeProxima();
+
+                // verifica se é o final da rota
                 if (tmp.cidDestino == inRota.cidPartida)                
                     gerandoRota = false;                    
                
@@ -97,6 +99,7 @@ namespace CaixeiroViajante
                 {
                     if (menor.km == -1 || acesso.km < menor.km)
                     {
+                        // verifica se cidade ja foi visitada
                         cidVisit = false;
                         foreach (Acesso tmp in rota)
                         {
@@ -105,8 +108,9 @@ namespace CaixeiroViajante
                                 cidVisit = true;                                
                                 break;
                             }
-                        }
+                        } // encerra verificação de cidade visitada
 
+                        // se a cidade não foi visitada e a distancia for menor troca o valor a ser retornado 
                         if (cidVisit == false)                        
                             menor = acesso;                                                    
                     }
@@ -114,6 +118,8 @@ namespace CaixeiroViajante
                 else if (acesso.cidDestino == inRota.cidPartida)
                         temp = acesso;
             }
+
+            // caso não haja outra cidade a ser visitada manda a aresta que encerra a rota.
             if (menor.km == -1)            
                 menor = temp;
             
