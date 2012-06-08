@@ -156,7 +156,6 @@ namespace Heuristicas
             viagem.AddComponente(new Acesso("Florianópoles", "Curitiba", 300));
 
             viagem.GerarViagem("Belo Horizonte");
-
             
             foreach (Acesso a in viagem.rota)
                 System.Console.WriteLine("Partida: " + a.cidPartida + "  Destino: "+a.cidDestino+"  Distancia: "+a.km+"KM\n");

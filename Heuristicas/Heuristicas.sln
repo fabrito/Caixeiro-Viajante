@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeuristicaMelhoria", "Heuri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaixeiroViajante", "CaixeiroViajante\CaixeiroViajante.csproj", "{1FEDFF24-6161-41D7-94B3-7B0EFF85C044}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadroHorarios", "QuadroHorarios\QuadroHorarios.csproj", "{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,16 @@ Global
 		{1FEDFF24-6161-41D7-94B3-7B0EFF85C044}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{1FEDFF24-6161-41D7-94B3-7B0EFF85C044}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{1FEDFF24-6161-41D7-94B3-7B0EFF85C044}.Release|x86.ActiveCfg = Release|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7BBE82E3-5511-4591-AAC8-5A3C1BB4D052}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
