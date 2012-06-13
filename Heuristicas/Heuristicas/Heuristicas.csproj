@@ -59,10 +59,6 @@
       <Project>{0080804E-3A32-470A-808B-0B98F5966E1F}</Project>
       <Name>HeuristicaMelhoria</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProblemaCaixeiroViajante1\ProblemaCaixeiroViajante.csproj">
-      <Project>{5823BA1F-B7CC-4CAE-B868-9845E7C87A6B}</Project>
-      <Name>ProblemaCaixeiroViajante</Name>
-    </ProjectReference>
     <ProjectReference Include="..\ProblemaMochila\ProblemaMochila.csproj">
       <Project>{ABB230D4-DBDB-4E19-B9AF-0CBE70BF7B1B}</Project>
       <Name>ProblemaMochila</Name>

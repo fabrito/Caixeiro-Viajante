@@ -42,8 +42,8 @@
   <ItemGroup>
     <Compile Include="Acesso.cs" />
     <Compile Include="ConstroiViagem.cs" />
-    <Compile Include="OtimizarViagem.cs" />
-    <Compile Include="Viagem.cs" />
+    <Compile Include="MelhoraViagem.cs" />
+    <Compile Include="viagem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
