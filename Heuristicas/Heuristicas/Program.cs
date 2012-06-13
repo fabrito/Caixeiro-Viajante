@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+
 using CaixeiroViajante;
 using HeuristicaConstrutiva;
 using HeuristicaMelhoria;
 using ProblemaMochila;
+using ProblemaCaixeiroViajante;
 
 namespace Heuristicas
 {
@@ -85,11 +87,12 @@ namespace Heuristicas
             System.Console.WriteLine("\n===================================================\n ");
             System.Console.WriteLine("Peso da Mochila: " + heuristica.Mochila.CapacidadeAtual);
             System.Console.WriteLine("Utilidade da Mochila: " + heuristica.Solucao.Avaliacao);
-            */
+            
            
             // Problema Cacheiro Viajante
             
             Viagem viagem = new Viagem();
+            
 
             viagem.AddComponente(new Acesso("Belo Horizonte", "Salvador",1372 ));
             viagem.AddComponente(new Acesso("Belo Horizonte", "Brasília", 716));
@@ -155,14 +158,34 @@ namespace Heuristicas
             viagem.AddComponente(new Acesso("Florianópoles", "Rio de Janeiro", 1144));
             viagem.AddComponente(new Acesso("Florianópoles", "Curitiba", 300));
 
-            viagem.GerarViagem("Belo Horizonte");
+            //viagem.GerarViagem("Belo Horizonte");
+            viagem.inViagem ="Belo Horizonte";
+
+            ConstroiViagem gerar = new ConstroiViagem();
+            viagem.rota = gerar.GerarComponentes();
             
             foreach (Acesso a in viagem.rota)
                 System.Console.WriteLine("Partida: " + a.cidPartida + "  Destino: "+a.cidDestino+"  Distancia: "+a.km+"KM\n");
 
             System.Console.WriteLine("Distância percorrida: " + viagem.kmPercorridos + "KM");
+          * 
+          */
 
+
+            Grafo teste = new Grafo();
             
+            //a = new Aresta("Belo Horizonte", "Salvador", 1372);
+            teste.AddAcesso(new Aresta("Belo Horizonte", "Salvador", 1372));
+            teste.AddAcesso(new Aresta("Belo Horizonte", "Brasília", 716));
+            teste.AddAcesso(new Aresta("Belo Horizonte", "Vitória", 524));
+            teste.AddAcesso(new Aresta("Belo Horizonte", "São Paulo", 586));
+            teste.AddAcesso(new Aresta("Belo Horizonte", "Rio de Janeiro", 434));
+            teste.AddAcesso(new Aresta("Belo Horizonte", "Curitiba", 1004));
+            teste.AddAcesso(new Aresta("Belo Horizonte", "Florianópoles", 1301));
+
+            foreach (Aresta a in teste.acessos)
+                System.Console.WriteLine("Partida: " + a.cidPartir.cidade + "  Destino: " + a.cidChegar.cidade + "  Distancia: " + a.Valor + "KM\n");
+
             System.Console.ReadLine();
         }
     }

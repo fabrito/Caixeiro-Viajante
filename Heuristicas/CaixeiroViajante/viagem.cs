@@ -8,9 +8,11 @@ namespace CaixeiroViajante
 {
     public class Viagem : ISolucao
     {
-        public string cidPartida;
-        public float kmPercorridos;
+        public string inViagem { get; set; }
+        public float kmPercorridos { get; set; }
         public List<IComponente> rota;
+        
+        
         public List<IComponente> Componentes
         {
             get;
@@ -27,6 +29,8 @@ namespace CaixeiroViajante
             Componentes = new List<IComponente>();
             rota = new List<IComponente>();
             kmPercorridos = 0;
+            
+            
 
         }
 
@@ -48,8 +52,9 @@ namespace CaixeiroViajante
                 Componentes.Remove(aresta);
         }
 
+        
 
-        public void GerarViagem(string partida)
+       /* public void GerarViagem(string partida)
         {
             kmPercorridos = 0;
             Acesso tmp = new Acesso();
@@ -124,6 +129,6 @@ namespace CaixeiroViajante
                 menor = temp;
             
             return menor;
-        }       
+        }       */
     }
 }
